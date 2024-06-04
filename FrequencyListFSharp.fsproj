@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Utils.fs" />
+    <Compile Include="File1.fs" />
+    <Compile Include="Categories.fs" />
+    <Compile Include="Converters.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.0-preview2" />
+    <PackageReference Include="FSharp.Json" Version="0.4.1" />
+    <PackageReference Include="FSharp.Text.RegexProvider" Version="2.1.0" />
+    <PackageReference Include="FSharpPlus" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="8.0.300" />
+  </ItemGroup>
+
+</Project>
