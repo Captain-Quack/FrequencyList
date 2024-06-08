@@ -12,7 +12,6 @@ open Utils
 // close excel file
 System.Diagnostics.Process.GetProcessesByName("EXCEL") |> Array.iter (fun x -> x.Kill())
 
-// Define your custom types
 type Packet = {
     [<JsonField(Transform=typeof<Transforms.OidConverter>)>] _id: Oid
     name: string
